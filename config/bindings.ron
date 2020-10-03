@@ -1,7 +1,8 @@
 (
   axes: {
-    "left_paddle": Emulated(pos: Key(W), neg: Key(S)),
-    "right_paddle": Emulated(pos: Key(Up), neg: Key(Down)),
+    "horizontal": Emulated(pos: Key(D), neg: Key(A)),
+    "vertical": Emulated(pos: Key(W), neg: Key(S)),
+    "scaling": Emulated(pos: Key(R), neg: Key(F)),
   },
   actions: {},
 )
