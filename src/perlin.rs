@@ -21,7 +21,7 @@ fn initialise_camera(world: &mut World) {
 
   world
     .create_entity()
-    .with(Camera::standard_2d(SCREEN_WIDTH * 2.0, SCREEN_HEIGHT * 2.0))
+    .with(Camera::standard_2d(SCREEN_WIDTH * 0.5, SCREEN_HEIGHT * 0.5))
     .with(transform)
     .build();
 }
@@ -78,8 +78,8 @@ impl SimpleState for PerlinState {
 
     let perlin = Perlin::new();
 
-    let h = 100;
-    let w = 100;
+    let h = 32;
+    let w = 64;
 
     let mut pre_calculated: Vec<Vec<bool>> = Vec::new();
 

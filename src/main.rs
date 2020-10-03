@@ -11,10 +11,7 @@ use amethyst::{
   utils::application_root_dir,
 };
 
-use noise::{NoiseFn, Perlin};
-
 mod perlin;
-mod pong;
 
 use perlin::{PerlinState, PerlinTile};
 
